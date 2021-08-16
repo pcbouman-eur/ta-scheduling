@@ -1,0 +1,9 @@
+**/.project
+**/.settings
+**/.mvn/
+**/mvnw
+**/mvnw.bat
+**/mvnw.cmd
+**/.classpath
+frontend/node/
+**/target/**
