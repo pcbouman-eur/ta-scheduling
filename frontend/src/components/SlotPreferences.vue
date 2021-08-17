@@ -1,38 +1,34 @@
 <template>
   <v-container>
-    <v-row class="text-center">
+    <v-row>
       <v-col cols="12">
-        Test! <br /> {{myData}}
-        <v-container>
-          <v-row>
-            <v-col cols="2" v-for="i of slots" :key="i">
-              <weekly-slot-preference :weeklySlot="i"/>
-            </v-col>
-          </v-row>
-        </v-container>
+        <h3>Please indicate for the following time slots your availability and preference</h3>
       </v-col>
     </v-row>
-    <v-btn @click="downloadTestJson" style="display: none;">Do Test</v-btn>
+    <v-row>
+      <v-col cols="12" sm="10" md="6" lg="4" xl="3" v-for="(slot, idx) of instance.askSlots" :key="'col-'+idx">
+        <weekly-slot-preference :weeklySlot="slot" style="min-height: 16em"/>
+      </v-col>
+    </v-row>
+    
   </v-container>
 </template>
 
 <script lang="ts">
   import {Component, Vue} from 'vue-property-decorator'
+  import {State} from 'vuex-class'
   import WeeklySlotPreference from './WeeklySlotPreference.vue';
-//  import PreferenceSelect from './PreferenceSelect.vue';
-  import { Preference } from '../data';
+  import { SchedulingInstance } from '../data';
 
   import {retrieveInstance} from '../handle-sheet';
 
   @Component({
     components: {
       WeeklySlotPreference
-//        PreferenceSelect
     }
   })
-  export default class Stuff extends Vue {
-    myData = Preference.NEUTRAL;
-    slots = [...Array(12).keys()]
+  export default class SlotPreferences extends Vue {
+    @State('instance') instance?: SchedulingInstance = undefined
     downloadTestJson(): void {
       retrieveInstance().then(
         instance => {

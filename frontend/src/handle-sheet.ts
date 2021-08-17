@@ -161,7 +161,7 @@ function ses_cmp(fst: Session, snd: Session): number {
 }
 
 
-function bundlesPerWeeklySlot(bundles: Bundle[]): slot_bundles[] {
+export function bundlesPerWeeklySlot(bundles: Bundle[]): slot_bundles[] {
     const aggregator = new Map();
     for (const bundle of bundles) {
         const key = weeklySlotKey(bundle.weeklySlot);
@@ -274,8 +274,8 @@ function parseGroup(raw_input: string, courseCode: string, stripPrefix='Group ')
     }
     const postFixMatch = courseCode.match(/[A-Za-z]$/)
     return {
-        name: input,
-        groupType: input + (postFixMatch ? '-' + postFixMatch[0] : ''),
+        name: input + (postFixMatch ? ('-' + postFixMatch[0]) : ''),
+        groupType: input + (postFixMatch ? ('-' + postFixMatch[0]) : ''),
         plenary: false
     }
 }

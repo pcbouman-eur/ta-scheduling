@@ -1,10 +1,22 @@
+export interface NumberPreferences {
+  [index: number]: Preference;
+}
+
+export interface StringPreferences {
+  [index: string]: Preference
+}
+
+export interface StringBoolean {
+  [index: string]: boolean
+}
+
 export interface UserPreferences {
-  capabilities: { [key: string]: boolean; };
-  consecutivePreferences: { [key: number]: Preference; };
-  groupPreferences: { [key: string]: Preference; };
+  capabilities: StringBoolean;
+  consecutivePreferences: NumberPreferences;
+  groupTypePreferences: StringPreferences;
   userId: string;
-  differentDaysPreference: { [key: number]: Preference; };
-  slotPreferences: [[WeeklySlot,Preference]];
+  differentDaysPreferences: NumberPreferences;
+  slotPreferences: StringPreferences;
   schedulingComment: string;
 }
 
@@ -21,7 +33,7 @@ export enum PreferenceColors {
   UNAVAILABLE = '#888888',
   STRONGLY_UNFAVORED = '#ff6b6b',
   UNFAVORED = '#ffadad',
-  NEUTRAL = '#ffffff', //'#fffa70',
+  NEUTRAL = '#fffa70',
   FAVORED = '#ccffcc',
   STRONGLY_FAVORED = '#75ff75'
 }
@@ -63,7 +75,7 @@ export interface Bundle {
 }  
 
 export enum DayOfWeek {
-  MONDAY = 0, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+  SUNDAY = 0, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
 }
 
 export interface SchedulingInstance {
