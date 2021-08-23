@@ -27,7 +27,7 @@
 <script lang="ts">
   import {Component, Vue} from 'vue-property-decorator';
   import {State} from 'vuex-class';
-  import {SchedulingInstance} from '../data';
+  import {SchedulingInstance} from '@/data';
 
   @Component
   export default class Capabilities extends Vue {

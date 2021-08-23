@@ -26,8 +26,8 @@
 <script lang="ts">
   import {Prop, Component, Vue} from 'vue-property-decorator'
   import {Getter, Mutation} from 'vuex-class'
-  import {weeklySlotToString, weekNumberString} from '../utils'
-  import {WeeklySlot, Preference, Bundle} from '../data'
+  import {weeklySlotToString, weekNumberString} from '@/utils'
+  import {WeeklySlot, Preference, Bundle} from '@/data'
   import PreferenceSelect from './PreferenceSelect.vue';
 
   @Component({

@@ -1,4 +1,4 @@
-import { Session, Group, WeeklySlot, Bundle, SchedulingInstance } from './data';
+import { Session, Group, WeeklySlot, Bundle, SchedulingInstance, IndexedBundle } from './data';
 import { read, Sheet, utils, WorkBook } from "xlsx";
 
 import dayjs from 'dayjs';
@@ -128,7 +128,7 @@ interface sheet_record {
 
 interface slot_bundles {
     weeklySlot: WeeklySlot;
-    bundles: Bundle[];
+    bundles: IndexedBundle[];
 }
 
 function time_dist(prev: Session, next: Session, timeUnit=60000): number {
@@ -163,13 +163,13 @@ function ses_cmp(fst: Session, snd: Session): number {
 
 export function bundlesPerWeeklySlot(bundles: Bundle[]): slot_bundles[] {
     const aggregator = new Map();
-    for (const bundle of bundles) {
+    for (const [index,bundle] of bundles.entries()) {
         const key = weeklySlotKey(bundle.weeklySlot);
         if (!aggregator.has(key)) {
-            aggregator.set(key, [bundle]);
+            aggregator.set(key, [{index, ...bundle}]);
         }
         else {
-            aggregator.get(key).push(bundle);
+            aggregator.get(key).push({index, ...bundle});
         }
     }
     

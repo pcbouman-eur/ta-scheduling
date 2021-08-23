@@ -1,4 +1,4 @@
-import {DayOfWeek, WeeklySlot, Session, SchedulingInstance, UserPreferences, Preference, NumberPreferences, StringPreferences, StringBoolean} from './data'
+import {DayOfWeek, WeeklySlot, Session, SchedulingInstance, UserPreferences, Preference, NumberPreferences, StringPreferences, StringBoolean, Bundle, UserAvailability, SchedulingState} from './data'
 
 import dayjs from 'dayjs';
 import weekOfYear from 'dayjs/plugin/weekOfYear';
@@ -42,14 +42,14 @@ export function weekNumberString(sessions: Session[], addPrefix=true): string {
 
 export function downloadInstanceJson(instance: SchedulingInstance): void {
     const filename = 'scheduling-'+instance.courseNames[0].replaceAll(/[^A-Za-z0-9-_]/g,'_')+'.json';
-        const element = document.createElement('a');
-        const body = JSON.stringify(instance);
-        element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(body));
-        element.setAttribute('download', filename);
-        element.style.display = 'none';
-        document.body.appendChild(element);
-        element.click();
-        document.body.removeChild(element);
+    const element = document.createElement('a');
+    const body = JSON.stringify(instance);
+    element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(body));
+    element.setAttribute('download', filename);
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
 }
 
 export function downloadPreferencesJson(preferences: UserPreferences, instance: SchedulingInstance): void {
@@ -61,6 +61,19 @@ export function downloadPreferencesJson(preferences: UserPreferences, instance: 
     filename += '.json';
     const element = document.createElement('a');
     const body = JSON.stringify(preferences);
+    element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(body));
+    element.setAttribute('download', filename);
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+}
+
+export function downloadSchedulingJson(state: SchedulingState): void {
+    const instance = state.instance;
+    const filename = 'scheduling-state-'+instance.courseNames[0].replaceAll(/[^A-Za-z0-9-_]/g,'_')+'.json';
+    const element = document.createElement('a');
+    const body = JSON.stringify(state);
     element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(body));
     element.setAttribute('download', filename);
     element.style.display = 'none';
@@ -116,6 +129,10 @@ export function instanceToDefaultPreferences(instance: SchedulingInstance=emptyI
     };
 }
 
+export function emptyUserAvailability(): UserAvailability[] {
+    return [];
+}
+
 
 // TODO: can't we make this a single method with some type generics? This is ugly...
 function mapConvNum(map: Map<number,Preference>): NumberPreferences {
@@ -140,4 +157,49 @@ function mapConvBool(map: Map<string,boolean>): StringBoolean {
         result[key] = val;
     }
     return result;
+}
+
+export function findDataValue(el: HTMLElement, key: string, boundaryType?: string): string|undefined {
+    let current: HTMLElement|null = el;
+    const boundary = boundaryType?.toUpperCase();
+    while (current != null) {
+        if (current.tagName === boundary) {
+            return undefined;
+        }
+        const dataset = current.dataset;
+        
+        if (dataset && dataset[key] !== undefined) {
+            return dataset[key];
+        }
+        current = current.parentElement;
+    }
+    return undefined;
+}
+
+export function computeBundlesToSchedule(bundles: Bundle[]): number {
+    let result = 0;
+    for (const bundle of bundles) {
+        result += computeStaffNeeded(bundle);
+    }
+    return result;
+}
+
+export function computeStaffNeeded(bundle: Bundle): number {
+    let result = 0;
+    for (const session of bundle.sessions) {
+        result = Math.max(result, session.staffNeeded);
+    }
+    return result;
+}
+
+export function compareSessions(ses1: Session, ses2: Session): number {
+    const start1 = new Date(ses1.timeSlot.start);
+    const start2 = new Date(ses2.timeSlot.start);
+    const startDiff = start1.getTime() - start2.getTime();
+    if (startDiff !== 0) {
+        return startDiff;
+    }
+    const end1 = new Date(ses1.timeSlot.end);
+    const end2 = new Date(ses2.timeSlot.end);
+    return end1.getTime() - end2.getTime();
 }

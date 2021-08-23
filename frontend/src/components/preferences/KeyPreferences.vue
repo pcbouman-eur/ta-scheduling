@@ -6,7 +6,7 @@
       </v-col>
     </v-row>
     <v-row >
-      <v-col cols="6" md="3" v-for="(key, idx) of keys" :key="'col-'+idx">
+      <v-col cols="12" md="6" xl="4" v-for="(key, idx) of keys" :key="'col-'+idx">
         <v-card elevation="2" tile>
           <v-card-text>{{transformed[idx]}}</v-card-text>
           <v-card-actions>
@@ -21,7 +21,7 @@
 <script lang="ts">
   import {Component, Vue, Prop, Emit} from 'vue-property-decorator'
   import PreferenceSelect from './PreferenceSelect.vue';
-  import { Preference } from '../data';
+  import { Preference } from '@/data';
 
   @Component({
     components: {

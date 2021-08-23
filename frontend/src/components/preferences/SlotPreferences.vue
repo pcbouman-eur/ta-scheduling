@@ -18,9 +18,9 @@
   import {Component, Vue} from 'vue-property-decorator'
   import {State} from 'vuex-class'
   import WeeklySlotPreference from './WeeklySlotPreference.vue';
-  import { SchedulingInstance } from '../data';
+  import { SchedulingInstance } from '@/data';
 
-  import {retrieveInstance} from '../handle-sheet';
+  import {retrieveInstance} from '@/handle-sheet';
 
   @Component({
     components: {

@@ -10,9 +10,9 @@
 
 <script lang="ts">
   import {Component, Vue} from 'vue-property-decorator'
-  import {State} from 'vuex-class'
+  import {State, Mutation} from 'vuex-class'
   import KeyPreferences from './KeyPreferences.vue';
-  import { SchedulingInstance } from '../data';
+  import { SchedulingInstance } from '@/data';
   @Component({
     components: {
       KeyPreferences
@@ -24,8 +24,6 @@
     transform(grp: string): string {
       return 'Your preference with regarding to teaching groups of type '+grp;
     }
-    change(payload: unknown): void {
-      console.log(payload)
-    }
+    @Mutation('setGroupTypePref') change!: (payload: unknown) => void
   }
 </script>

@@ -10,7 +10,7 @@
 
 <script lang="ts">
   import {Prop, Component, Vue} from 'vue-property-decorator'
-  import {Preference, PreferenceColors} from '../data';
+  import {Preference, PreferenceColors} from '@/data';
 
   @Component
   export default class PreferenceSelect extends Vue {

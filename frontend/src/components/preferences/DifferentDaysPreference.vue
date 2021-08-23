@@ -12,7 +12,7 @@
   import {Component, Vue} from 'vue-property-decorator'
   import {State, Mutation} from 'vuex-class'
   import KeyPreferences from './KeyPreferences.vue';
-  import { SchedulingInstance } from '../data';
+  import { SchedulingInstance } from '@/data';
   @Component({
     components: {
       KeyPreferences

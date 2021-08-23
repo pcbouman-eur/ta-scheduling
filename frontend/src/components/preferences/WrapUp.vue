@@ -11,7 +11,7 @@
         <p>Now that you passed through all steps, you can finalize your choices.
            Use the following button to obtain a file with all your preferences.
         </p>
-        <v-btn class="spaced" color="primary" @click="download">Download your Preferences</v-btn>
+        <v-btn class="spaced" color="primary" @click="download">Download Preferences</v-btn>
         
         <p>
           Please make sure to send your preferences to the course coordinator!
@@ -24,8 +24,8 @@
 <script lang="ts">
   import {Component, Vue} from 'vue-property-decorator';
   import {State,Mutation} from 'vuex-class';
-  import {SchedulingInstance,UserPreferences} from '../data';
-  import {downloadPreferencesJson} from '../utils'
+  import {SchedulingInstance,UserPreferences} from '@/data';
+  import {downloadPreferencesJson} from '@/utils'
 
   @Component
   export default class Capabilities extends Vue {

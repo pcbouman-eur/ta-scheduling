@@ -20,6 +20,12 @@ export interface UserPreferences {
   schedulingComment: string;
 }
 
+export interface UserAvailability {
+  preferences: UserPreferences;
+  totalWorkload: number;
+  maxWeeklyWorkload: number;
+}
+
 export enum Preference {
   UNAVAILABLE = 'UNAVAILABLE',
   STRONGLY_UNFAVORED = 'STRONGLY_UNFAVORED',
@@ -72,7 +78,11 @@ export interface Bundle {
   name: string;
   group: Group;
   weeklySlot: WeeklySlot;
-}  
+}
+
+export interface IndexedBundle extends Bundle{
+  index: number;
+}
 
 export enum DayOfWeek {
   SUNDAY = 0, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
@@ -90,4 +100,29 @@ export interface SchedulingInstance {
   groupTypes: string[];
   askCapabilities: boolean;
   capabilities: string[];
+}
+
+export interface SchedulingConfiguration {
+  favoredScore: number;
+  stronglyFavoredScore: number;
+  neutralScore: number;
+  unfavoredScore: number;
+  stronglyUnfavoredScore: number;
+  unavailableScore: number;
+  slotPreferenceFactor: number;
+  groupPreferenceFactor: number;
+  consecutiveSessionFactor: number;
+  multipleDayFactor: number;
+  multiTAExponent: number;
+  multiTAFactor: number;
+  violationScore: number;
+  uncoveredScore: number;
+  consecutiveThresholdMinutes: number;
+}
+
+export interface SchedulingState {
+  instance: SchedulingInstance;
+  taAvailability: UserAvailability[];
+  currentAssignment: number[];
+  configuration: SchedulingConfiguration;
 }
