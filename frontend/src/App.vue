@@ -2,8 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Preferences</router-link> |
-      <router-link to="/scheduling">Scheduling</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/scheduling">Scheduling</router-link>
+      <!-- | <router-link to="/about">About</router-link> -->
     </div>
     <router-view />
   </div>

@@ -53,6 +53,9 @@ export default new Vuex.Store({
             //state.helper.setAssignment(payload.bundleIndex, payload.taIndex);
             Vue.set(state.currentAssignment, payload.bundleIndex, payload.taIndex);
         },
+        setAssignment(state, payload) {
+            Vue.set(state, 'currentAssignment', payload);
+        },
         setTotalWorkload(state, payload) {
             Vue.set(state.taAvailability[payload.index], 'totalWorkload', payload.value);
         },

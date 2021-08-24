@@ -1,1 +1,2163 @@
-{"courseNames":["Programmeren (FEB22012)","Programming (FEB22012X)"],"bundles":[{"name":"ET01","group":{"name":"ET01","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":9,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T07:00:00.000Z","end":"2021-09-02T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95 (25 p) (56)","id":2,"type":"tutorial","group":{"name":"ET01","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"ET02","group":{"name":"ET02","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":9,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T07:00:00.000Z","end":"2021-09-02T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":3,"type":"tutorial","group":{"name":"ET02","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"ET03","group":{"name":"ET03","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":11,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T09:00:00.000Z","end":"2021-09-02T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95 (25 p) (56)","id":4,"type":"tutorial","group":{"name":"ET03","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"ET04","group":{"name":"ET04","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":11,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T09:00:00.000Z","end":"2021-09-02T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":5,"type":"tutorial","group":{"name":"ET04","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"IT02","group":{"name":"IT02","groupType":"IT","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":11,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T09:00:00.000Z","end":"2021-09-02T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":6,"type":"tutorial","group":{"name":"IT02","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-09T09:00:00.000Z","end":"2021-09-09T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":25,"type":"tutorial","group":{"name":"IT02","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-16T09:00:00.000Z","end":"2021-09-16T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":40,"type":"tutorial","group":{"name":"IT02","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-23T09:00:00.000Z","end":"2021-09-23T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":55,"type":"tutorial","group":{"name":"IT02","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-30T09:00:00.000Z","end":"2021-09-30T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":70,"type":"tutorial","group":{"name":"IT02","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-10-07T09:00:00.000Z","end":"2021-10-07T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":85,"type":"tutorial","group":{"name":"IT02","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-10-14T09:00:00.000Z","end":"2021-10-14T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":100,"type":"tutorial","group":{"name":"IT02","groupType":"IT","plenary":false},"requiredCapabilities":["English"]}]},{"name":"ET06","group":{"name":"ET06","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":13,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T11:00:00.000Z","end":"2021-09-02T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":7,"type":"tutorial","group":{"name":"ET06","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"ET05","group":{"name":"ET05","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":13,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T11:00:00.000Z","end":"2021-09-02T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95 (25 p) (56)","id":8,"type":"tutorial","group":{"name":"ET05","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"EE02","group":{"name":"EE02","groupType":"EE","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":13,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T11:00:00.000Z","end":"2021-09-02T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":9,"type":"tutorial","group":{"name":"EE02","groupType":"EE","plenary":false},"requiredCapabilities":["English"]}]},{"name":"EE01","group":{"name":"EE01","groupType":"EE","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":13,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T11:00:00.000Z","end":"2021-09-02T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":10,"type":"tutorial","group":{"name":"EE01","groupType":"EE","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-09T11:00:00.000Z","end":"2021-09-09T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":27,"type":"tutorial","group":{"name":"EE01","groupType":"EE","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-16T11:00:00.000Z","end":"2021-09-16T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":42,"type":"tutorial","group":{"name":"EE01","groupType":"EE","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-23T11:00:00.000Z","end":"2021-09-23T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":57,"type":"tutorial","group":{"name":"EE01","groupType":"EE","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-30T11:00:00.000Z","end":"2021-09-30T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":72,"type":"tutorial","group":{"name":"EE01","groupType":"EE","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-10-07T11:00:00.000Z","end":"2021-10-07T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":87,"type":"tutorial","group":{"name":"EE01","groupType":"EE","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-10-14T11:00:00.000Z","end":"2021-10-14T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":102,"type":"tutorial","group":{"name":"EE01","groupType":"EE","plenary":false},"requiredCapabilities":["English"]}]},{"name":"PREMSC","group":{"name":"PREMSC","groupType":"PREMSC","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":15,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T13:00:00.000Z","end":"2021-09-02T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95 (25 p) (56)","id":11,"type":"tutorial","group":{"name":"PREMSC","groupType":"PREMSC","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"RCDV","group":{"name":"RCDV","groupType":"RCDV","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":15,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T13:00:00.000Z","end":"2021-09-02T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":12,"type":"tutorial","group":{"name":"RCDV","groupType":"RCDV","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"IT01","group":{"name":"IT01","groupType":"IT","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":15,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T13:00:00.000Z","end":"2021-09-02T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":13,"type":"tutorial","group":{"name":"IT01","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-09T13:00:00.000Z","end":"2021-09-09T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":28,"type":"tutorial","group":{"name":"IT01","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-16T13:00:00.000Z","end":"2021-09-16T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":43,"type":"tutorial","group":{"name":"IT01","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-23T13:00:00.000Z","end":"2021-09-23T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":58,"type":"tutorial","group":{"name":"IT01","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-30T13:00:00.000Z","end":"2021-09-30T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":73,"type":"tutorial","group":{"name":"IT01","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-10-07T13:00:00.000Z","end":"2021-10-07T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":88,"type":"tutorial","group":{"name":"IT01","groupType":"IT","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-10-14T13:00:00.000Z","end":"2021-10-14T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":103,"type":"tutorial","group":{"name":"IT01","groupType":"IT","plenary":false},"requiredCapabilities":["English"]}]},{"name":"PREMSC-X","group":{"name":"PREMSC-X","groupType":"PREMSC-X","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":17,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-02T15:00:00.000Z","end":"2021-09-02T16:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":14,"type":"tutorial","group":{"name":"PREMSC-X","groupType":"PREMSC-X","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-09T15:00:00.000Z","end":"2021-09-09T16:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":29,"type":"tutorial","group":{"name":"PREMSC-X","groupType":"PREMSC-X","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-16T15:00:00.000Z","end":"2021-09-16T16:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":44,"type":"tutorial","group":{"name":"PREMSC-X","groupType":"PREMSC-X","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-23T15:00:00.000Z","end":"2021-09-23T16:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":59,"type":"tutorial","group":{"name":"PREMSC-X","groupType":"PREMSC-X","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-30T15:00:00.000Z","end":"2021-09-30T16:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":74,"type":"tutorial","group":{"name":"PREMSC-X","groupType":"PREMSC-X","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-10-07T15:00:00.000Z","end":"2021-10-07T16:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":89,"type":"tutorial","group":{"name":"PREMSC-X","groupType":"PREMSC-X","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-10-14T15:00:00.000Z","end":"2021-10-14T16:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-209 (17 p) (35)","id":104,"type":"tutorial","group":{"name":"PREMSC-X","groupType":"PREMSC-X","plenary":false},"requiredCapabilities":["English"]}]},{"name":"ET01","group":{"name":"ET01","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":3,"startHour":9,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-08T07:00:00.000Z","end":"2021-09-08T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":17,"type":"tutorial","group":{"name":"ET01","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-15T07:00:00.000Z","end":"2021-09-15T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":32,"type":"tutorial","group":{"name":"ET01","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-22T07:00:00.000Z","end":"2021-09-22T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":47,"type":"tutorial","group":{"name":"ET01","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-29T07:00:00.000Z","end":"2021-09-29T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":62,"type":"tutorial","group":{"name":"ET01","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-06T07:00:00.000Z","end":"2021-10-06T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":77,"type":"tutorial","group":{"name":"ET01","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-13T07:00:00.000Z","end":"2021-10-13T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":92,"type":"tutorial","group":{"name":"ET01","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"ET02","group":{"name":"ET02","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":3,"startHour":9,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-08T07:00:00.000Z","end":"2021-09-08T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-46 (27 p) (53)","id":18,"type":"tutorial","group":{"name":"ET02","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-15T07:00:00.000Z","end":"2021-09-15T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-46 (27 p) (53)","id":33,"type":"tutorial","group":{"name":"ET02","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-22T07:00:00.000Z","end":"2021-09-22T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-46 (27 p) (53)","id":48,"type":"tutorial","group":{"name":"ET02","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-29T07:00:00.000Z","end":"2021-09-29T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-46 (27 p) (53)","id":63,"type":"tutorial","group":{"name":"ET02","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-06T07:00:00.000Z","end":"2021-10-06T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-46 (27 p) (53)","id":78,"type":"tutorial","group":{"name":"ET02","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-13T07:00:00.000Z","end":"2021-10-13T08:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-46 (27 p) (53)","id":93,"type":"tutorial","group":{"name":"ET02","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"ET03","group":{"name":"ET03","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":3,"startHour":11,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-08T09:00:00.000Z","end":"2021-09-08T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":19,"type":"tutorial","group":{"name":"ET03","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-15T09:00:00.000Z","end":"2021-09-15T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":34,"type":"tutorial","group":{"name":"ET03","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-22T09:00:00.000Z","end":"2021-09-22T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":49,"type":"tutorial","group":{"name":"ET03","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-29T09:00:00.000Z","end":"2021-09-29T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":64,"type":"tutorial","group":{"name":"ET03","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-06T09:00:00.000Z","end":"2021-10-06T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":79,"type":"tutorial","group":{"name":"ET03","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-13T09:00:00.000Z","end":"2021-10-13T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-95A (25 p) (63)","id":94,"type":"tutorial","group":{"name":"ET03","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"ET04","group":{"name":"ET04","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":3,"startHour":11,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-08T09:00:00.000Z","end":"2021-09-08T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":20,"type":"tutorial","group":{"name":"ET04","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-15T09:00:00.000Z","end":"2021-09-15T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":35,"type":"tutorial","group":{"name":"ET04","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-22T09:00:00.000Z","end":"2021-09-22T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":50,"type":"tutorial","group":{"name":"ET04","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-29T09:00:00.000Z","end":"2021-09-29T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":65,"type":"tutorial","group":{"name":"ET04","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-06T09:00:00.000Z","end":"2021-10-06T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":80,"type":"tutorial","group":{"name":"ET04","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-13T09:00:00.000Z","end":"2021-10-13T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":95,"type":"tutorial","group":{"name":"ET04","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"ET05","group":{"name":"ET05","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":3,"startHour":13,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-08T11:00:00.000Z","end":"2021-09-08T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":21,"type":"tutorial","group":{"name":"ET05","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-15T11:00:00.000Z","end":"2021-09-15T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":36,"type":"tutorial","group":{"name":"ET05","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-22T11:00:00.000Z","end":"2021-09-22T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":51,"type":"tutorial","group":{"name":"ET05","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-29T11:00:00.000Z","end":"2021-09-29T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":66,"type":"tutorial","group":{"name":"ET05","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-06T11:00:00.000Z","end":"2021-10-06T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":81,"type":"tutorial","group":{"name":"ET05","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-13T11:00:00.000Z","end":"2021-10-13T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":96,"type":"tutorial","group":{"name":"ET05","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"ET06","group":{"name":"ET06","groupType":"ET","plenary":false},"weeklySlot":{"dayOfWeek":3,"startHour":13,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-08T11:00:00.000Z","end":"2021-09-08T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-82 (20 p) (40)","id":22,"type":"tutorial","group":{"name":"ET06","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-15T11:00:00.000Z","end":"2021-09-15T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-82 (20 p) (40)","id":37,"type":"tutorial","group":{"name":"ET06","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-22T11:00:00.000Z","end":"2021-09-22T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-82 (20 p) (40)","id":52,"type":"tutorial","group":{"name":"ET06","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-29T11:00:00.000Z","end":"2021-09-29T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-82 (20 p) (40)","id":67,"type":"tutorial","group":{"name":"ET06","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-06T11:00:00.000Z","end":"2021-10-06T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-82 (20 p) (40)","id":82,"type":"tutorial","group":{"name":"ET06","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-13T11:00:00.000Z","end":"2021-10-13T12:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T4-82 (20 p) (40)","id":97,"type":"tutorial","group":{"name":"ET06","groupType":"ET","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"PREMSC","group":{"name":"PREMSC","groupType":"PREMSC","plenary":false},"weeklySlot":{"dayOfWeek":3,"startHour":15,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-08T13:00:00.000Z","end":"2021-09-08T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-226 (17 p) (35)","id":23,"type":"tutorial","group":{"name":"PREMSC","groupType":"PREMSC","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-15T13:00:00.000Z","end":"2021-09-15T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-226 (17 p) (35)","id":38,"type":"tutorial","group":{"name":"PREMSC","groupType":"PREMSC","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-22T13:00:00.000Z","end":"2021-09-22T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-226 (17 p) (35)","id":53,"type":"tutorial","group":{"name":"PREMSC","groupType":"PREMSC","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-29T13:00:00.000Z","end":"2021-09-29T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-226 (17 p) (35)","id":68,"type":"tutorial","group":{"name":"PREMSC","groupType":"PREMSC","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-06T13:00:00.000Z","end":"2021-10-06T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-226 (17 p) (35)","id":83,"type":"tutorial","group":{"name":"PREMSC","groupType":"PREMSC","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-13T13:00:00.000Z","end":"2021-10-13T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-226 (17 p) (35)","id":98,"type":"tutorial","group":{"name":"PREMSC","groupType":"PREMSC","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"RCDV","group":{"name":"RCDV","groupType":"RCDV","plenary":false},"weeklySlot":{"dayOfWeek":3,"startHour":15,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-08T13:00:00.000Z","end":"2021-09-08T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":24,"type":"tutorial","group":{"name":"RCDV","groupType":"RCDV","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-15T13:00:00.000Z","end":"2021-09-15T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":39,"type":"tutorial","group":{"name":"RCDV","groupType":"RCDV","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-22T13:00:00.000Z","end":"2021-09-22T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":54,"type":"tutorial","group":{"name":"RCDV","groupType":"RCDV","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-09-29T13:00:00.000Z","end":"2021-09-29T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":69,"type":"tutorial","group":{"name":"RCDV","groupType":"RCDV","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-06T13:00:00.000Z","end":"2021-10-06T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":84,"type":"tutorial","group":{"name":"RCDV","groupType":"RCDV","plenary":false},"requiredCapabilities":["Dutch"]},{"timeSlot":{"start":"2021-10-13T13:00:00.000Z","end":"2021-10-13T14:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Mandeville T3-51 (23 p) (39)","id":99,"type":"tutorial","group":{"name":"RCDV","groupType":"RCDV","plenary":false},"requiredCapabilities":["Dutch"]}]},{"name":"EE02","group":{"name":"EE02","groupType":"EE","plenary":false},"weeklySlot":{"dayOfWeek":4,"startHour":11,"startMinute":0,"durationInHours":2},"sessions":[{"timeSlot":{"start":"2021-09-09T09:00:00.000Z","end":"2021-09-09T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":26,"type":"tutorial","group":{"name":"EE02","groupType":"EE","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-16T09:00:00.000Z","end":"2021-09-16T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":41,"type":"tutorial","group":{"name":"EE02","groupType":"EE","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-23T09:00:00.000Z","end":"2021-09-23T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":56,"type":"tutorial","group":{"name":"EE02","groupType":"EE","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-09-30T09:00:00.000Z","end":"2021-09-30T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":71,"type":"tutorial","group":{"name":"EE02","groupType":"EE","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-10-07T09:00:00.000Z","end":"2021-10-07T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":86,"type":"tutorial","group":{"name":"EE02","groupType":"EE","plenary":false},"requiredCapabilities":["English"]},{"timeSlot":{"start":"2021-10-14T09:00:00.000Z","end":"2021-10-14T10:45:00.000Z"},"staffNeeded":1,"canBundle":true,"location":"Tinbergen HT-203 (17 p) (35)","id":101,"type":"tutorial","group":{"name":"EE02","groupType":"EE","plenary":false},"requiredCapabilities":["English"]}]}],"askSlots":[{"dayOfWeek":3,"startHour":9,"startMinute":0,"durationInHours":2},{"dayOfWeek":3,"startHour":11,"startMinute":0,"durationInHours":2},{"dayOfWeek":3,"startHour":13,"startMinute":0,"durationInHours":2},{"dayOfWeek":3,"startHour":15,"startMinute":0,"durationInHours":2},{"dayOfWeek":4,"startHour":9,"startMinute":0,"durationInHours":2},{"dayOfWeek":4,"startHour":11,"startMinute":0,"durationInHours":2},{"dayOfWeek":4,"startHour":13,"startMinute":0,"durationInHours":2},{"dayOfWeek":4,"startHour":15,"startMinute":0,"durationInHours":2},{"dayOfWeek":4,"startHour":17,"startMinute":0,"durationInHours":2}],"askConsecutiveSessions":true,"maxConsecutiveSessions":3,"askDifferentDays":false,"maxDifferentDays":3,"askGroupTypes":true,"groupTypes":["EE","ET","IT","PREMSC","PREMSC-X","RCDV"],"askCapabilities":true,"capabilities":["Dutch","English"]}
+{
+    "courseNames": [
+        "Programmeren (FEB22012)",
+        "Programming (FEB22012X)"
+    ],
+    "bundles": [
+        {
+            "name": "ET01-a",
+            "group": {
+                "name": "ET01",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 9,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T07:00:00.000Z",
+                        "end": "2021-09-02T08:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95 (25 p) (56)",
+                    "id": 2,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET01",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ET02-a",
+            "group": {
+                "name": "ET02",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 9,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T07:00:00.000Z",
+                        "end": "2021-09-02T08:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 3,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET02",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ET03-a",
+            "group": {
+                "name": "ET03",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 11,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T09:00:00.000Z",
+                        "end": "2021-09-02T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95 (25 p) (56)",
+                    "id": 4,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET03",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ET04-a",
+            "group": {
+                "name": "ET04",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 11,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T09:00:00.000Z",
+                        "end": "2021-09-02T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 5,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET04",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "IT02",
+            "group": {
+                "name": "IT02",
+                "groupType": "IT",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 11,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T09:00:00.000Z",
+                        "end": "2021-09-02T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 6,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT02",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-09T09:00:00.000Z",
+                        "end": "2021-09-09T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 25,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT02",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-16T09:00:00.000Z",
+                        "end": "2021-09-16T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 40,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT02",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-23T09:00:00.000Z",
+                        "end": "2021-09-23T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 55,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT02",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-30T09:00:00.000Z",
+                        "end": "2021-09-30T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 70,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT02",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-07T09:00:00.000Z",
+                        "end": "2021-10-07T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 85,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT02",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-14T09:00:00.000Z",
+                        "end": "2021-10-14T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 100,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT02",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ET06-a",
+            "group": {
+                "name": "ET06",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 13,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T11:00:00.000Z",
+                        "end": "2021-09-02T12:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 7,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET06",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ET05-a",
+            "group": {
+                "name": "ET05",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 13,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T11:00:00.000Z",
+                        "end": "2021-09-02T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95 (25 p) (56)",
+                    "id": 8,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET05",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "EE02-a",
+            "group": {
+                "name": "EE02",
+                "groupType": "EE",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 13,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T11:00:00.000Z",
+                        "end": "2021-09-02T12:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 9,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE02",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "EE01",
+            "group": {
+                "name": "EE01",
+                "groupType": "EE",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 13,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T11:00:00.000Z",
+                        "end": "2021-09-02T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 10,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE01",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-09T11:00:00.000Z",
+                        "end": "2021-09-09T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 27,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE01",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-16T11:00:00.000Z",
+                        "end": "2021-09-16T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 42,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE01",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-23T11:00:00.000Z",
+                        "end": "2021-09-23T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 57,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE01",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-30T11:00:00.000Z",
+                        "end": "2021-09-30T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 72,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE01",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-07T11:00:00.000Z",
+                        "end": "2021-10-07T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 87,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE01",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-14T11:00:00.000Z",
+                        "end": "2021-10-14T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 102,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE01",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PREMSC-a",
+            "group": {
+                "name": "PREMSC",
+                "groupType": "PREMSC",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 15,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T13:00:00.000Z",
+                        "end": "2021-09-02T14:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95 (25 p) (56)",
+                    "id": 11,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC",
+                        "groupType": "PREMSC",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "RCDV-a",
+            "group": {
+                "name": "RCDV",
+                "groupType": "RCDV",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 15,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T13:00:00.000Z",
+                        "end": "2021-09-02T14:45:00.000Z"
+                    },
+                    "staffNeeded": 0,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 12,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "RCDV",
+                        "groupType": "RCDV",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "IT01",
+            "group": {
+                "name": "IT01",
+                "groupType": "IT",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 15,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T13:00:00.000Z",
+                        "end": "2021-09-02T14:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 13,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT01",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-09T13:00:00.000Z",
+                        "end": "2021-09-09T14:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 28,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT01",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-16T13:00:00.000Z",
+                        "end": "2021-09-16T14:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 43,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT01",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-23T13:00:00.000Z",
+                        "end": "2021-09-23T14:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 58,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT01",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-30T13:00:00.000Z",
+                        "end": "2021-09-30T14:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 73,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT01",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-07T13:00:00.000Z",
+                        "end": "2021-10-07T14:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 88,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT01",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-14T13:00:00.000Z",
+                        "end": "2021-10-14T14:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 103,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "IT01",
+                        "groupType": "IT",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PREMSC-X",
+            "group": {
+                "name": "PREMSC-X",
+                "groupType": "PREMSC-X",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 17,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-02T15:00:00.000Z",
+                        "end": "2021-09-02T16:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 14,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC-X",
+                        "groupType": "PREMSC-X",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-09T15:00:00.000Z",
+                        "end": "2021-09-09T16:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 29,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC-X",
+                        "groupType": "PREMSC-X",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-16T15:00:00.000Z",
+                        "end": "2021-09-16T16:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 44,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC-X",
+                        "groupType": "PREMSC-X",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-23T15:00:00.000Z",
+                        "end": "2021-09-23T16:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 59,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC-X",
+                        "groupType": "PREMSC-X",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-30T15:00:00.000Z",
+                        "end": "2021-09-30T16:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 74,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC-X",
+                        "groupType": "PREMSC-X",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-07T15:00:00.000Z",
+                        "end": "2021-10-07T16:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 89,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC-X",
+                        "groupType": "PREMSC-X",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-14T15:00:00.000Z",
+                        "end": "2021-10-14T16:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-209 (17 p) (35)",
+                    "id": 104,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC-X",
+                        "groupType": "PREMSC-X",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ET01-b",
+            "group": {
+                "name": "ET01",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 3,
+                "startHour": 9,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-08T07:00:00.000Z",
+                        "end": "2021-09-08T08:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 17,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET01",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-15T07:00:00.000Z",
+                        "end": "2021-09-15T08:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 32,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET01",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-22T07:00:00.000Z",
+                        "end": "2021-09-22T08:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 47,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET01",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-29T07:00:00.000Z",
+                        "end": "2021-09-29T08:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 62,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET01",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-06T07:00:00.000Z",
+                        "end": "2021-10-06T08:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 77,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET01",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-13T07:00:00.000Z",
+                        "end": "2021-10-13T08:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 92,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET01",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ET02-b",
+            "group": {
+                "name": "ET02",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 3,
+                "startHour": 9,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-08T07:00:00.000Z",
+                        "end": "2021-09-08T08:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-46 (27 p) (53)",
+                    "id": 18,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET02",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-15T07:00:00.000Z",
+                        "end": "2021-09-15T08:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-46 (27 p) (53)",
+                    "id": 33,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET02",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-22T07:00:00.000Z",
+                        "end": "2021-09-22T08:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-46 (27 p) (53)",
+                    "id": 48,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET02",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-29T07:00:00.000Z",
+                        "end": "2021-09-29T08:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-46 (27 p) (53)",
+                    "id": 63,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET02",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-06T07:00:00.000Z",
+                        "end": "2021-10-06T08:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-46 (27 p) (53)",
+                    "id": 78,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET02",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-13T07:00:00.000Z",
+                        "end": "2021-10-13T08:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-46 (27 p) (53)",
+                    "id": 93,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET02",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ET03-b",
+            "group": {
+                "name": "ET03",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 3,
+                "startHour": 11,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-08T09:00:00.000Z",
+                        "end": "2021-09-08T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 19,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET03",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-15T09:00:00.000Z",
+                        "end": "2021-09-15T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 34,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET03",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-22T09:00:00.000Z",
+                        "end": "2021-09-22T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 49,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET03",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-29T09:00:00.000Z",
+                        "end": "2021-09-29T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 64,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET03",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-06T09:00:00.000Z",
+                        "end": "2021-10-06T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 79,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET03",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-13T09:00:00.000Z",
+                        "end": "2021-10-13T10:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T4-95A (25 p) (63)",
+                    "id": 94,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET03",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ET04-b",
+            "group": {
+                "name": "ET04",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 3,
+                "startHour": 11,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-08T09:00:00.000Z",
+                        "end": "2021-09-08T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 20,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET04",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-15T09:00:00.000Z",
+                        "end": "2021-09-15T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 35,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET04",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-22T09:00:00.000Z",
+                        "end": "2021-09-22T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 50,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET04",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-29T09:00:00.000Z",
+                        "end": "2021-09-29T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 65,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET04",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-06T09:00:00.000Z",
+                        "end": "2021-10-06T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 80,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET04",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-13T09:00:00.000Z",
+                        "end": "2021-10-13T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 95,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET04",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ET05-b",
+            "group": {
+                "name": "ET05",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 3,
+                "startHour": 13,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-08T11:00:00.000Z",
+                        "end": "2021-09-08T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 21,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET05",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-15T11:00:00.000Z",
+                        "end": "2021-09-15T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 36,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET05",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-22T11:00:00.000Z",
+                        "end": "2021-09-22T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 51,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET05",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-29T11:00:00.000Z",
+                        "end": "2021-09-29T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 66,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET05",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-06T11:00:00.000Z",
+                        "end": "2021-10-06T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 81,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET05",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-13T11:00:00.000Z",
+                        "end": "2021-10-13T12:45:00.000Z"
+                    },
+                    "staffNeeded": 2,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 96,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET05",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ET06-b",
+            "group": {
+                "name": "ET06",
+                "groupType": "ET",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 3,
+                "startHour": 13,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-08T11:00:00.000Z",
+                        "end": "2021-09-08T12:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T4-82 (20 p) (40)",
+                    "id": 22,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET06",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-15T11:00:00.000Z",
+                        "end": "2021-09-15T12:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T4-82 (20 p) (40)",
+                    "id": 37,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET06",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-22T11:00:00.000Z",
+                        "end": "2021-09-22T12:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T4-82 (20 p) (40)",
+                    "id": 52,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET06",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-29T11:00:00.000Z",
+                        "end": "2021-09-29T12:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T4-82 (20 p) (40)",
+                    "id": 67,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET06",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-06T11:00:00.000Z",
+                        "end": "2021-10-06T12:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T4-82 (20 p) (40)",
+                    "id": 82,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET06",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-13T11:00:00.000Z",
+                        "end": "2021-10-13T12:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Mandeville T4-82 (20 p) (40)",
+                    "id": 97,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "ET06",
+                        "groupType": "ET",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PREMSC-b",
+            "group": {
+                "name": "PREMSC",
+                "groupType": "PREMSC",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 3,
+                "startHour": 15,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-08T13:00:00.000Z",
+                        "end": "2021-09-08T14:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-226 (17 p) (35)",
+                    "id": 23,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC",
+                        "groupType": "PREMSC",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-15T13:00:00.000Z",
+                        "end": "2021-09-15T14:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-226 (17 p) (35)",
+                    "id": 38,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC",
+                        "groupType": "PREMSC",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-22T13:00:00.000Z",
+                        "end": "2021-09-22T14:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-226 (17 p) (35)",
+                    "id": 53,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC",
+                        "groupType": "PREMSC",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-29T13:00:00.000Z",
+                        "end": "2021-09-29T14:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-226 (17 p) (35)",
+                    "id": 68,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC",
+                        "groupType": "PREMSC",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-06T13:00:00.000Z",
+                        "end": "2021-10-06T14:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-226 (17 p) (35)",
+                    "id": 83,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC",
+                        "groupType": "PREMSC",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-13T13:00:00.000Z",
+                        "end": "2021-10-13T14:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-226 (17 p) (35)",
+                    "id": 98,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "PREMSC",
+                        "groupType": "PREMSC",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "RCDV-b",
+            "group": {
+                "name": "RCDV",
+                "groupType": "RCDV",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 3,
+                "startHour": 15,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-08T13:00:00.000Z",
+                        "end": "2021-09-08T14:45:00.000Z"
+                    },
+                    "staffNeeded": 0,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 24,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "RCDV",
+                        "groupType": "RCDV",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-15T13:00:00.000Z",
+                        "end": "2021-09-15T14:45:00.000Z"
+                    },
+                    "staffNeeded": 0,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 39,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "RCDV",
+                        "groupType": "RCDV",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-22T13:00:00.000Z",
+                        "end": "2021-09-22T14:45:00.000Z"
+                    },
+                    "staffNeeded": 0,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 54,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "RCDV",
+                        "groupType": "RCDV",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-29T13:00:00.000Z",
+                        "end": "2021-09-29T14:45:00.000Z"
+                    },
+                    "staffNeeded": 0,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 69,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "RCDV",
+                        "groupType": "RCDV",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-06T13:00:00.000Z",
+                        "end": "2021-10-06T14:45:00.000Z"
+                    },
+                    "staffNeeded": 0,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 84,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "RCDV",
+                        "groupType": "RCDV",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-13T13:00:00.000Z",
+                        "end": "2021-10-13T14:45:00.000Z"
+                    },
+                    "staffNeeded": 0,
+                    "canBundle": true,
+                    "location": "Mandeville T3-51 (23 p) (39)",
+                    "id": 99,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "RCDV",
+                        "groupType": "RCDV",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "Dutch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "EE02-b",
+            "group": {
+                "name": "EE02",
+                "groupType": "EE",
+                "plenary": false
+            },
+            "weeklySlot": {
+                "dayOfWeek": 4,
+                "startHour": 11,
+                "startMinute": 0,
+                "durationInHours": 2
+            },
+            "sessions": [
+                {
+                    "timeSlot": {
+                        "start": "2021-09-09T09:00:00.000Z",
+                        "end": "2021-09-09T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 26,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE02",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-16T09:00:00.000Z",
+                        "end": "2021-09-16T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 41,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE02",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-23T09:00:00.000Z",
+                        "end": "2021-09-23T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 56,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE02",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-09-30T09:00:00.000Z",
+                        "end": "2021-09-30T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 71,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE02",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-07T09:00:00.000Z",
+                        "end": "2021-10-07T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 86,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE02",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                },
+                {
+                    "timeSlot": {
+                        "start": "2021-10-14T09:00:00.000Z",
+                        "end": "2021-10-14T10:45:00.000Z"
+                    },
+                    "staffNeeded": 1,
+                    "canBundle": true,
+                    "location": "Tinbergen HT-203 (17 p) (35)",
+                    "id": 101,
+                    "type": "tutorial",
+                    "group": {
+                        "name": "EE02",
+                        "groupType": "EE",
+                        "plenary": false
+                    },
+                    "requiredCapabilities": [
+                        "English"
+                    ]
+                }
+            ]
+        }
+    ],
+    "askSlots": [
+        {
+            "dayOfWeek": 3,
+            "startHour": 9,
+            "startMinute": 0,
+            "durationInHours": 2
+        },
+        {
+            "dayOfWeek": 3,
+            "startHour": 11,
+            "startMinute": 0,
+            "durationInHours": 2
+        },
+        {
+            "dayOfWeek": 3,
+            "startHour": 13,
+            "startMinute": 0,
+            "durationInHours": 2
+        },
+        {
+            "dayOfWeek": 3,
+            "startHour": 15,
+            "startMinute": 0,
+            "durationInHours": 2
+        },
+        {
+            "dayOfWeek": 4,
+            "startHour": 9,
+            "startMinute": 0,
+            "durationInHours": 2
+        },
+        {
+            "dayOfWeek": 4,
+            "startHour": 11,
+            "startMinute": 0,
+            "durationInHours": 2
+        },
+        {
+            "dayOfWeek": 4,
+            "startHour": 13,
+            "startMinute": 0,
+            "durationInHours": 2
+        },
+        {
+            "dayOfWeek": 4,
+            "startHour": 15,
+            "startMinute": 0,
+            "durationInHours": 2
+        },
+        {
+            "dayOfWeek": 4,
+            "startHour": 17,
+            "startMinute": 0,
+            "durationInHours": 2
+        }
+    ],
+    "askConsecutiveSessions": true,
+    "maxConsecutiveSessions": 3,
+    "askDifferentDays": false,
+    "maxDifferentDays": 3,
+    "askGroupTypes": true,
+    "groupTypes": [
+        "EE",
+        "ET",
+        "IT",
+        "PREMSC",
+        "PREMSC-X",
+        "RCDV"
+    ],
+    "askCapabilities": true,
+    "capabilities": [
+        "Dutch",
+        "English"
+    ]
+}

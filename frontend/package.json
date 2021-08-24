@@ -10,7 +10,9 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "dayjs": "^1.10.6",
+    "dom-to-svg": "^0.12.2",
     "lzutf8": "^0.6.0",
+    "random-js": "^2.1.0",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2",

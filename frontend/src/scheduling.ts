@@ -1,4 +1,4 @@
-import { IndexedBundle, Preference, SchedulingConfiguration, SchedulingInstance, Session, UserAvailability } from "@/data";
+import { IndexedBundle, Preference, SchedulingConfiguration, SchedulingInstance, SchedulingState, Session, UserAvailability } from "@/data";
 import { compareSessions, computeStaffNeeded, weeklySlotToString } from "./utils";
 import dayjs from 'dayjs';
 import weekOfYear from 'dayjs/plugin/weekOfYear';
@@ -203,8 +203,9 @@ function computeConsecutive(sesList: Session[], config: SchedulingConfiguration)
     return counts;
 }
 
-function computeObjective(config: SchedulingConfiguration, assignment: number[],
-                          availability: UserAvailability[], bundlesPerTa: IndexedBundle[][]): number {
+function computeObjective(config: SchedulingConfiguration, assignment: number[], availability: UserAvailability[],
+                            bundlesPerTa: IndexedBundle[][], bundleViolations: Violation[][],
+                            workloadViolations: Violation[]): number {
     let result = 0;
     
     // Uncovered sessions
@@ -284,7 +285,25 @@ function computeObjective(config: SchedulingConfiguration, assignment: number[],
     }
     
     // TODO: And violations?
+    for (const lst of bundleViolations) {
+        result += config.violationScore * lst.length;
+    }
+    result += config.violationScore * workloadViolations.length;
 
+    return result;
+}
+
+function computeWorkloadViolations(workloads: number[], weeklyWorkloads: number[],
+                                    availability: UserAvailability[]): Violation[] {
+    const result = [];
+    for (const [idx, av] of availability.entries()) {
+        if (workloads[idx] > av.totalWorkload) {
+            result.push({type: ViolationType.WORKLOAD_VIOLATION, text:`Maximum total workload of ${av.preferences.userId} violated`});
+        }
+        if (weeklyWorkloads[idx] > av.maxWeeklyWorkload) {
+            result.push({type: ViolationType.WORKLOAD_VIOLATION, text:`Maximum weekly workload of ${av.preferences.userId} violated`});
+        }
+    }
     return result;
 }
 
@@ -298,7 +317,8 @@ export function computeScheduleInformation(instance: SchedulingInstance,
     const workloads = computeTotalWorkloads(availability, bundlesPerTa);
     const weeklyWorkloads = computeMaxWeeklyWorkloads(availability, bundlesPerTa);
     const bundleViolations = computeBundleViolations(bundles, availability, bundlesPerTa);
-    const objective = computeObjective(config, assignment, availability, bundlesPerTa);
+    const workloadViolations = computeWorkloadViolations(workloads, weeklyWorkloads, availability);
+    const objective = computeObjective(config, assignment, availability, bundlesPerTa, bundleViolations, workloadViolations);
     return {
         instance,
         availability,
@@ -308,9 +328,17 @@ export function computeScheduleInformation(instance: SchedulingInstance,
         matrix,
         workloads,
         weeklyWorkloads,
+        workloadViolations,
         bundleViolations,
         objective
     };
+}
+
+export function computeFromState(state: SchedulingState, assignment?: number[]): ScheduleInformation {
+    if (assignment) {
+        return computeScheduleInformation(state.instance, state.taAvailability, assignment, state.configuration);
+    }
+    return computeScheduleInformation(state.instance, state.taAvailability, state.currentAssignment, state.configuration);
 }
 
 export function defaultSchedulingConfiguration(): SchedulingConfiguration {
@@ -357,5 +385,6 @@ export interface ScheduleInformation {
     workloads: number[];
     weeklyWorkloads: number[];
     bundleViolations: Violation[][];
+    workloadViolations: Violation[];
     objective: number;
 }

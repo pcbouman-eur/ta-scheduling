@@ -1,9 +1,13 @@
 <template>
   <div>
-  <v-card elevation="2">
-    Current objective: {{objective}}
-  </v-card>
-  <table class="schedule-table">
+  <v-toolbar outlined>
+    <v-btn @click="performGreedy()">Greedy</v-btn>
+    <v-btn @click="reset()">Reset</v-btn>
+    <v-spacer />
+    Current objective: {{objective}}    
+  </v-toolbar>
+  <br />
+  <table class="schedule-table" ref="table" id="schedulingTable">
     <thead>
       <tr>
         <th scope="col">Timeslot</th>
@@ -71,16 +75,20 @@
     </ul>
   </v-alert>
   <tadetails v-for="av,idx of taAvailability" ref="detailDialogs" :availability="av" :key="'ta-details-'+idx" />
+  <v-btn @click="print()">Download SVG</v-btn>
+  <v-divider />
   </div>
 </template>
 
 <script lang="ts">
   import {Component, Vue, Ref} from 'vue-property-decorator';
   import {State, Getter, Mutation} from 'vuex-class';
-  import {SchedulingInstance, PreferenceColors, UserAvailability, IndexedBundle} from '@/data';
-  import {weeklySlotToString, findDataValue} from '@/utils';
+  import {SchedulingInstance, PreferenceColors, UserAvailability, IndexedBundle, SchedulingState} from '@/data';
+  import {weeklySlotToString, findDataValue, downloadString } from '@/utils';
   import {ScheduleInformation, Violation } from '@/scheduling';
   import TADetails from '@/components/scheduling/TADetails.vue';
+  import {greedy} from '@/optimize';
+  import { elementToSVG, inlineResources } from 'dom-to-svg';
 
   @Component({
     components: {
@@ -121,6 +129,23 @@
     }
     showDetails(idx: number): void {
       this.detailDialogs[idx].setVisible(true);
+    }
+    @Ref('table') table!: HTMLTableElement;
+    async print(): Promise<void> {
+      console.log(this.table);
+      const svgDocument = elementToSVG(this.table);
+      await inlineResources(svgDocument.documentElement);
+      const svgString = new XMLSerializer().serializeToString(svgDocument);
+      downloadString(svgString, 'schedule.svg');
+      //print('schedulingTable', 'html');
+      /*
+      const doc = new jsPDF({
+        orientation: "landscape",
+        unit: "mm",
+        format: [297, 210]
+      });
+      */
+
     }
     dragStart(ev: DragEvent): void {
         const element = ev.target as HTMLElement;
@@ -169,6 +194,18 @@
         }
         */
     }
+    @Getter("fullState") fullState!: SchedulingState
+    performGreedy(): void {
+      const newAssignment = greedy(this.fullState);
+      if (newAssignment != null) {
+        this.setAssignment(newAssignment);
+      }
+    }
+    reset(): void {
+      const newAssignment = new Array(this.currentAssignment.length).fill(-1);
+      this.setAssignment(newAssignment);
+    }
+    @Mutation('setAssignment') setAssignment!: (payload: unknown) => void
     @Mutation('assignBundleToTa') assignBundleToTa!: (payload: unknown) => void
     drop(ev: DragEvent): void {
         ev.preventDefault();

@@ -82,6 +82,16 @@ export function downloadSchedulingJson(state: SchedulingState): void {
     document.body.removeChild(element);
 }
 
+export function downloadString(data: string, filename: string): void {
+    const element = document.createElement('a');
+    element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(data));
+    element.setAttribute('download', filename);
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+}
+
 function seqToStr(seq: number[]) {
     if (seq.length >= 2) {
         return seq[0] + '-' + seq[seq.length-1];
