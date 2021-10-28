@@ -213,3 +213,28 @@ export function compareSessions(ses1: Session, ses2: Session): number {
     const end2 = new Date(ses2.timeSlot.end);
     return end1.getTime() - end2.getTime();
 }
+
+export function addMaps<K>(map1: Map<K,number>, map2: Map<K,number>, inline=false): Map<K,number> {
+    const result = inline ? map1 : new Map(map1);
+    for (const [key,value] of map2.entries()) {
+        if (result.has(key)) {
+            let old = result.get(key);
+            if (!old) {
+                old = 0;
+            }
+            result.set(key, old+value);
+        }
+        else {
+            result.set(key, value);
+        }
+    }
+    return result;
+}
+
+export function mapMaxValue<T>(map: Map<T,number>): number {
+    let result = -Infinity;
+    for (const n of map.values()) {
+        result = Math.max(result, n);
+    }
+    return result;
+}

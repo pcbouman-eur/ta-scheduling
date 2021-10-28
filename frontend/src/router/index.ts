@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Preferences from '@/views/Preferences.vue'
 import Scheduling from '@/views/Scheduling.vue'
+import Prepare from '@/views/Prepare.vue'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes: Array<RouteConfig> = [
     name: 'Scheduling',
     component: Scheduling
   },
+  {
+    path: '/prepare',
+    name: 'Prepare',
+    component: Prepare
+  }
   // {
   //   path: '/about',
   //   name: 'About',

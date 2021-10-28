@@ -66,6 +66,10 @@ export interface Session {
   requiredCapabilities: string[];
 }
 
+export interface AssignedSession extends Session{
+  userId: string;
+}
+
 export interface WeeklySlot {
   durationInHours: number;
   dayOfWeek: DayOfWeek;

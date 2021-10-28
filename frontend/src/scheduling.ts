@@ -1,5 +1,5 @@
-import { IndexedBundle, Preference, SchedulingConfiguration, SchedulingInstance, SchedulingState, Session, UserAvailability } from "@/data";
-import { compareSessions, computeStaffNeeded, weeklySlotToString } from "./utils";
+import { AssignedSession, Bundle, IndexedBundle, Preference, SchedulingConfiguration, SchedulingInstance, SchedulingState, Session, UserAvailability } from "@/data";
+import { compareSessions, computeStaffNeeded, weeklySlotToString, addMaps } from "./utils";
 import dayjs from 'dayjs';
 import weekOfYear from 'dayjs/plugin/weekOfYear';
 dayjs.extend(weekOfYear);
@@ -59,11 +59,7 @@ function computeTotalWorkloads(availability: UserAvailability[], bundlesPerTa: I
     for (let i=0; i < availability.length; i++) {
         let workload = 0;
         for (const bundle of bundlesPerTa[i]) {
-            for (const session of bundle.sessions) {
-                const start = new Date(session.timeSlot.start);
-                const end = new Date(session.timeSlot.end);
-                workload += (end.getTime() - start.getTime()) / 3600000;                
-            }
+            workload += computeBundleWorkload(bundle);
         }
         result.push(workload);
     }
@@ -73,21 +69,7 @@ function computeTotalWorkloads(availability: UserAvailability[], bundlesPerTa: I
 function computeMaxWeeklyWorkloads(availability: UserAvailability[], bundlesPerTa: IndexedBundle[][]): number[] {
     const result = [];
     for (let i=0; i < availability.length; i++) {
-        const map = new Map();
-        for (const bundle of bundlesPerTa[i]) {
-            for (const session of bundle.sessions) {
-                const start = new Date(session.timeSlot.start);
-                const end = new Date(session.timeSlot.end);
-                const workload = (end.getTime() - start.getTime()) / 3600000;
-                const week = dayjs(start).week();
-                if (map.has(week)) {
-                    map.set(week, map.get(week) + workload);
-                }
-                else {
-                    map.set(week, workload);
-                }
-            }
-        }
+        const map = computeWeeklyWorkloads(bundlesPerTa[i]);
         let workload = 0;
         for (const weekLoad of map.values()) {
             workload = Math.max(workload, weekLoad);
@@ -141,22 +123,6 @@ function computeBundleViolations(bundles: IndexedBundle[], availability: UserAva
         }    
     }
     return result;
-}
-
-function checkOverlap(bundle1: IndexedBundle, bundle2: IndexedBundle) {
-    // TODO: if weekly slots do not overlap, we can skip the loop.
-    for (const session1 of bundle1.sessions) {
-        const s1Start = new Date(session1.timeSlot.start).getTime();
-        const s1End = new Date(session1.timeSlot.end).getTime();
-        for (const session2 of bundle2.sessions) {
-            const s2Start = new Date(session2.timeSlot.start).getTime();
-            const s2End = new Date(session2.timeSlot.end).getTime();
-            if (s1Start <= s2End && s1End >= s2Start) {
-                return true;
-            }
-        }
-    }
-    return false;
 }
 
 function configToScore(config: SchedulingConfiguration, pref: Preference): number {
@@ -246,7 +212,6 @@ function computeObjective(config: SchedulingConfiguration, assignment: number[],
         }
 
         // Analyze all the sessions for:
-        // - TODO: consecutive session factor
         sesList.sort(compareSessions);
         const counts = computeConsecutive(sesList, config);
         for (const count of counts) {
@@ -307,6 +272,76 @@ function computeWorkloadViolations(workloads: number[], weeklyWorkloads: number[
     return result;
 }
 
+function computeBundleWorkload(bundle: Bundle): number {
+    let workload = 0;
+    for (const session of bundle.sessions) {
+        const start = new Date(session.timeSlot.start);
+        const end = new Date(session.timeSlot.end);
+        workload += (end.getTime() - start.getTime()) / 3600000;                
+    }
+    return workload;
+}
+
+function computeAssignedSessions(availability: UserAvailability[], bundlesPerTA: IndexedBundle[][]): AssignedSession[] {
+    const result = [];
+    for (const [idx,av] of availability.entries()) {
+        const userId = av.preferences.userId;
+        for (const bundle of bundlesPerTA[idx])  {
+            for (const session of bundle.sessions) {
+                result.push({...session, userId});
+            }
+        }
+    }
+    return result;
+}
+
+export function computeBundleWeeklyWorkloads(bundle: Bundle): Map<number,number> {
+    const map = new Map();
+    for (const session of bundle.sessions) {
+        const start = new Date(session.timeSlot.start);
+        const end = new Date(session.timeSlot.end);
+        const workload = (end.getTime() - start.getTime()) / 3600000;
+        const week = dayjs(start).week();
+        if (map.has(week)) {
+            map.set(week, map.get(week) + workload);
+        }
+        else {
+            map.set(week, workload);
+        }
+    }
+    return map;
+}
+
+export function computeWeeklyWorkloads(bundles: Bundle[]): Map<number,number> {
+    const map = new Map();
+    for (const bundle of bundles) {
+        const subMap = computeBundleWeeklyWorkloads(bundle);
+        addMaps(map, subMap, true);
+    }
+    return map;
+}
+
+export function checkOverlap(bundle1: Bundle, bundle2: Bundle): boolean {
+    // TODO: if weekly slots do not overlap, we can skip the loop.
+    for (const session1 of bundle1.sessions) {
+        const s1Start = new Date(session1.timeSlot.start).getTime();
+        const s1End = new Date(session1.timeSlot.end).getTime();
+        for (const session2 of bundle2.sessions) {
+            const s2Start = new Date(session2.timeSlot.start).getTime();
+            const s2End = new Date(session2.timeSlot.end).getTime();
+            if (s1Start <= s2End && s1End >= s2Start) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+
+export function computeBundleWorkloads(bundles: Bundle[]): number[] {
+    return bundles.map(computeBundleWorkload);
+}
+
 export function computeScheduleInformation(instance: SchedulingInstance,
                                            availability: UserAvailability[],
                                            assignment: number[],
@@ -319,6 +354,7 @@ export function computeScheduleInformation(instance: SchedulingInstance,
     const bundleViolations = computeBundleViolations(bundles, availability, bundlesPerTa);
     const workloadViolations = computeWorkloadViolations(workloads, weeklyWorkloads, availability);
     const objective = computeObjective(config, assignment, availability, bundlesPerTa, bundleViolations, workloadViolations);
+    const assignedSessions = computeAssignedSessions(availability, bundlesPerTa);
     return {
         instance,
         availability,
@@ -330,7 +366,8 @@ export function computeScheduleInformation(instance: SchedulingInstance,
         weeklyWorkloads,
         workloadViolations,
         bundleViolations,
-        objective
+        objective,
+        assignedSessions
     };
 }
 
@@ -387,4 +424,5 @@ export interface ScheduleInformation {
     bundleViolations: Violation[][];
     workloadViolations: Violation[];
     objective: number;
+    assignedSessions: AssignedSession[];
 }

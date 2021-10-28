@@ -29,6 +29,7 @@
   })
   export default class LoadTAPreferences extends Vue {
       @State taAvailability!: UserAvailability[]
+      
       change(files: FileList|null):void {
           if (files) {
               for (const file of files) {

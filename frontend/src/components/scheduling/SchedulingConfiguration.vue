@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col cols="12">
-        <h3>Define TA workloads</h3>
+        <h3>Define Scheduling Priorities</h3>
       </v-col>
     </v-row>
     <v-row>

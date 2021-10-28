@@ -39,7 +39,7 @@
     </v-app-bar>
     -->
     <v-main>
-      <v-container class="text-left">
+      <v-container fluid class="text-left">
         <v-row>
           <v-col>
             <v-stepper v-model="step" non-linear vertical>

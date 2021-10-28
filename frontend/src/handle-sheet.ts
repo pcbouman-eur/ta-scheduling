@@ -189,16 +189,43 @@ function bundleKey(ws: WeeklySlot, grp: Group): string {
     return weeklySlotKey(ws) + '__' + grp.name;
 }
 
-function bundleSessions(sessions: Session[], removePlenary=true): Bundle[] {
+function makeName(group: Group, groupCount: Map<string,number>): string {
+    const count = groupCount.get(group.name);
+    let postFix = '';
+    if (count) {
+        groupCount.set(group.name, count+1);
+        let remain = count;
+        while (remain > 0) {
+            if (remain > 26) {
+                const charCode = remain % 26;
+                postFix += String.fromCharCode(97+charCode);
+                remain = Math.floor(remain / 26);
+            }
+            else {
+                postFix += String.fromCharCode(97+remain);
+                remain = 0;
+            }
+        }
+    }
+    else {
+        groupCount.set(group.name, 1);
+        postFix = 'a';
+    }
+    return group.name + '-' + postFix;
+}
+
+function bundleSessions(sessions: Session[], removePlenary=true, groupPostfix=true): Bundle[] {
     const filtered = sessions.filter( ses => (!ses.group.plenary || !removePlenary) && ses.canBundle );
+    const groupCount: Map<string,number> = new Map();
     const bundles: Map<string,Bundle> = new Map();
     for (const ses of filtered) {
         const ws = sessionToWeeklySlot(ses)
         const grp = ses.group;
         const key =  bundleKey(ws, grp);
-        if (!bundles.has(key)) {
+        if (!bundles.has(key)) {          
+            const name = groupPostfix ? makeName(grp, groupCount) : grp.name;
             bundles.set(key, {
-                name: ses.group.name,
+                name,
                 group: ses.group,
                 weeklySlot: ws,
                 sessions: [ses]
@@ -213,6 +240,7 @@ function bundleSessions(sessions: Session[], removePlenary=true): Bundle[] {
 
 function sessionToWeeklySlot(session: Session, timeUnit=3600000): WeeklySlot {
     const ts = session.timeSlot;
+    console.log(ts);
     const dayOfWeek = ts.start.getDay()
     const startHour = ts.start.getHours();
     const startMinute = ts.start.getMinutes();

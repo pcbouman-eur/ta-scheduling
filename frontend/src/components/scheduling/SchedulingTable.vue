@@ -7,67 +7,70 @@
     Current objective: {{objective}}    
   </v-toolbar>
   <br />
-  <table class="schedule-table" ref="table" id="schedulingTable">
-    <thead>
-      <tr>
-        <th scope="col">Timeslot</th>
-        <th scope="col" v-for="av,idx in taAvailability" :key="'table-head-'+idx" @click="showDetails(idx)">
-          {{av.preferences.userId}}
-        </th>
-        <th scope="col">Unassigned</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="slot,idx of slotRows" :key="'slot-row-'+idx">
-        <th scope="row">{{slot}}</th>
-        <td v-for="av,idx2 in taAvailability" :key="'table-cell-'+idx+'-'+idx2"
-          :style="{backgroundColor: colors[av.preferences.slotPreferences[slot]]}"
-                @dragstart="dragStart"
-                @dragenter="dragEnter"
-                @dragover="dragging"
-                @dragleave="dragEnd"
-                @drop="drop"
-                :data-idxta="idx2"
-        >
-          <v-chip x-small draggable v-for="bundle,idx3 in matrix[idx][idx2]" :key="'table-cell-bundle'+idx+'-'+idx2+'-'+idx3"
-            :color="bundleViolations[bundle.index].length == 0 ? 'primary' : 'secondary'" :data-idxbundle="bundle.index">
-            {{bundle.name}}
-          </v-chip>
-        </td>
-        <td style="background-color: #dfdfdf"
-                @dragstart="dragStart"
-                @dragenter="dragEnter"
-                @dragover="dragging"
-                @dragleave="dragEnd"
-                @drop="drop"
-                :data-idxta="-1"
-        >
-          <v-chip draggable x-small v-for="bundle,idx3 in matrix[idx][matrix[idx].length-1]" :key="'table-cell-unassigned-bundle'+idx+'-'+idx3"
-            color="primary" :data-idxbundle="bundle.index">
-            {{bundle.name}}
-          </v-chip>
-        </td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <th scope="row">Total Workload</th>
-        <th scope="col" v-for="av,idx in taAvailability" :key="'table-foot-total-'+idx"
-            :class="{violation: workloads[idx] > av.totalWorkload}">
-          {{workloads[idx]}} / {{av.totalWorkload}}
-        </th>
-        <th></th>
-      </tr>
-      <tr>
-        <th scope="row">Max Weekly Workload</th>
-        <th scope="col" v-for="av,idx in taAvailability" :key="'table-foot-total-'+idx"
-            :class="{violation: weeklyMaxLoads[idx] > av.maxWeeklyWorkload}">
-          {{weeklyMaxLoads[idx]}} / {{av.maxWeeklyWorkload}}
-        </th>
-        <th></th>
-      </tr>      
-    </tfoot>
-  </table>
+  <div class="table-container">
+    <table class="schedule-table" ref="table" id="schedulingTable">
+      <thead>
+        <tr>
+          <th scope="col">Timeslot</th>
+          <th scope="col" v-for="av,idx in taAvailability" :key="'table-head-'+idx" @click="showDetails(idx)">
+            {{names[idx]}}
+          </th>
+          <th scope="col">Unassigned</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="slot,idx of slotRows" :key="'slot-row-'+idx">
+          <th scope="row">{{slot}}</th>
+          <td v-for="av,idx2 in taAvailability" :key="'table-cell-'+idx+'-'+idx2"
+            :style="{backgroundColor: colors[av.preferences.slotPreferences[slot]]}"
+                  @dragstart="dragStart"
+                  @dragenter="dragEnter"
+                  @dragover="dragging"
+                  @dragleave="dragEnd"
+                  @drop="drop"
+                  :data-idxta="idx2"
+          >
+            <v-chip x-small draggable v-for="bundle,idx3 in matrix[idx][idx2]" :key="'table-cell-bundle'+idx+'-'+idx2+'-'+idx3"
+              :color="bundleViolations[bundle.index].length == 0 ? 'primary' : 'secondary'" :data-idxbundle="bundle.index"
+              @dblclick="clearBundle(bundle.index)">
+              {{bundle.name}}
+            </v-chip>
+          </td>
+          <td style="background-color: #dfdfdf"
+                  @dragstart="dragStart"
+                  @dragenter="dragEnter"
+                  @dragover="dragging"
+                  @dragleave="dragEnd"
+                  @drop="drop"
+                  :data-idxta="-1"
+          >
+            <v-chip draggable x-small v-for="bundle,idx3 in matrix[idx][matrix[idx].length-1]" :key="'table-cell-unassigned-bundle'+idx+'-'+idx3"
+              color="primary" :data-idxbundle="bundle.index" @dblclick="clearBundle(bundle.index)">
+              {{bundle.name}}
+            </v-chip>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Total Workload</th>
+          <th scope="col" v-for="av,idx in taAvailability" :key="'table-foot-total-'+idx"
+              :class="{violation: workloads[idx] > av.totalWorkload, lowLoad: workloads[idx] <= av.totalWorkload*0.7}">
+            {{workloads[idx]}} / {{av.totalWorkload}}
+          </th>
+          <th></th>
+        </tr>
+        <tr>
+          <th scope="row">Max Weekly Workload</th>
+          <th scope="col" v-for="av,idx in taAvailability" :key="'table-foot-total-'+idx"
+              :class="{violation: weeklyMaxLoads[idx] > av.maxWeeklyWorkload}">
+            {{weeklyMaxLoads[idx]}} / {{av.maxWeeklyWorkload}}
+          </th>
+          <th></th>
+        </tr>      
+      </tfoot>
+    </table>
+  </div>
   <v-alert v-if="violationList.length > 0" type="error">
     <h3>Violations found!</h3>
     <ul>
@@ -126,6 +129,29 @@
     }
     get objective(): number {
       return this.scheduleInformation.objective;
+    }
+    get names(): string[] {
+      const idToName = new Map();
+      const nameToId = new Map();
+      for (const av of this.taAvailability) {
+        const userId = av.preferences.userId;
+        const split = userId.trim().split(' ');
+        const first = split[0];
+        if (nameToId.has(first)) {
+          const fullName = nameToId.get(first);
+          idToName.set(fullName, fullName);
+          idToName.set(userId, userId);
+        }
+        else {
+          idToName.set(userId, first);
+          nameToId.set(first, userId);
+        }
+      }
+      const result = [];
+      for (const av of this.taAvailability) {
+        result.push(idToName.get(av.preferences.userId));
+      }
+      return result;
     }
     showDetails(idx: number): void {
       this.detailDialogs[idx].setVisible(true);
@@ -231,6 +257,9 @@
         }
         this.dragover = false;
         */
+    }
+    clearBundle(idx: number): void {
+      this.assignBundleToTa({bundleIndex: idx, taIndex: -1});
     }        
   }
 </script>
@@ -244,8 +273,23 @@
   font-size: 85%;
 }
 
+table.schedule-table th {
+  font-size: smaller;
+}
+
+.table-container {
+  max-width: 98%;
+  max-height: 98%;
+  overflow: auto;
+}
+
 .violation {
   color: red;
+  font-style: italic;
+}
+
+.lowLoad {
+  color: rgb(0, 17, 255);
   font-style: italic;
 }
 </style>
