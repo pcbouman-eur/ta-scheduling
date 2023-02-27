@@ -317,11 +317,15 @@ function processSheet(sheet: Sheet): sheet_record[] {
     let first_row = true;
     const result: sheet_record[] = [];
     const header: sheet_header = {};
+    console.log(sheet);
     for (let row = range.s.r; row <= range.e.r; row++) {
         const record: sheet_record = {};
         for (let col = range.s.c; col <= range.e.c; col++) {
             const cell_address = utils.encode_cell({r: row, c: col});
             const cell = sheet[cell_address];
+            if (!cell) {
+                continue;
+            }
             if (first_row) {
                 header[col] = cell.v;
             }

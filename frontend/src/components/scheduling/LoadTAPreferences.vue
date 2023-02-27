@@ -4,7 +4,7 @@
       <v-col>
         <h3>Load TA preferences</h3>
 
-        <FileDropZone accept=".json" :allowMultiple="true" @change="change"/>
+        <FileDropZone accept=".preferences.json" :allowMultiple="true" @change="change"/>
 
         <div v-if="taAvailability && taAvailability.length > 0">
             <h3>Preferences for the following TA's are now loaded</h3>

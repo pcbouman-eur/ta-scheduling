@@ -10,6 +10,14 @@ export function createTASpreadSheet(state: SchedulingState): XLSX.WorkBook {
     };
 
     const information = computeScheduleInformation(state.instance, state.taAvailability, state.currentAssignment, state.configuration);
+    const overviewTypeMap = computeGroupsPerTa(information, true);
+    const overviewGroupMap = computeGroupsPerTa(information);
+    const tas = [...overviewTypeMap.keys()].sort();
+
+    addOverviewSheet(result, [
+        {header: 'Group Types per TA', keys: tas, map: overviewTypeMap},
+        {header: 'Groups per TA', keys: tas, map: overviewGroupMap}
+    ]);
 
     for (const [idx, availability] of state.taAvailability.entries()) {
         const bundles = information.bundlesPerTa[idx];
@@ -26,12 +34,7 @@ export function createTASpreadSheet(state: SchedulingState): XLSX.WorkBook {
             const end = new Date(session.timeSlot.end);
             sheetArray.push([start.toLocaleString(),end.toLocaleString(), session.group.name, session.location]);
         }
-        const sheetName = `${idx+1}. ${availability.preferences.userId}`;
-        result.SheetNames.push(sheetName);
-        const sheet = XLSX.utils.aoa_to_sheet(sheetArray);
-        const colProps = [{wch: 28}, {wch: 28}, {wch: 10}, {wch: 35}];
-        sheet['!cols'] = colProps;
-        result.Sheets[sheetName] = sheet;
+        addSheet(result, sheetArray, `${idx+1}. ${availability.preferences.userId}`, [28, 28, 10, 35]);
     }
 
     return result;
@@ -54,6 +57,24 @@ function computeCourseGroupMap(info: ScheduleInformation): Map<string,Array<Assi
         sessions.sort(compareSessions);
     }
     
+    return result;
+}
+
+function computeGroupsPerTa(info: ScheduleInformation, groupType=false): Map<string,Map<string,number>> {
+    const result: Map<string,Map<string,number>> = new Map();
+
+    for (const session of info.assignedSessions) {
+        const ta = session.userId;
+        const group = groupType ? session.group.groupType : session.group.name;
+        let subMap = result.get(ta);
+        if (!subMap) {
+            subMap = new Map();
+            result.set(ta, subMap);
+        }
+        const count = subMap.get(group) || 0;
+        subMap.set(group, count + 1)
+    }
+
     return result;
 }
 
@@ -86,9 +107,36 @@ function addToSheetArray(categories: string[], sheetArray: string[][], map: Map<
         for (const [userId, count] of subList) {
             sheetArray.push([userId, `${count} sessions`]);
         }
-        sheetArray.push([]);
-        
+        sheetArray.push([]); 
     }
+}
+
+function addSheet(wb: XLSX.WorkBook, sheetArray: (string|number|Date)[][], sheetName: string, width: number[]) {
+    wb.SheetNames.push(sheetName);
+    const sheet = XLSX.utils.aoa_to_sheet(sheetArray);
+    const colProps: {wch: number}[] = [];
+    for (const wch of width) {
+        colProps.push({wch});
+    }
+    sheet['!cols'] = colProps;
+    wb.Sheets[sheetName] = sheet;
+}
+
+interface OverviewTask {
+    map: Map<string, Map<string,number>>;
+    header: string;
+    keys: string[];
+}
+
+function addOverviewSheet(wb: XLSX.WorkBook, tasks: OverviewTask[]) {
+    const sheetArray: string[][] = [];
+    for (const task of tasks) {
+        sheetArray.push([task.header]);
+        sheetArray.push([]);
+        addToSheetArray(task.keys, sheetArray, task.map);
+        sheetArray.push([]);
+    }
+    addSheet(wb, sheetArray, 'Overview', [25, 12]);
 }
 
 export function createGroupSpreadSheet(state: SchedulingState): XLSX.WorkBook {
@@ -104,37 +152,24 @@ export function createGroupSpreadSheet(state: SchedulingState): XLSX.WorkBook {
     const groups = [...map.keys()].sort();
     const types = [...overviewTypeMap.keys()].sort();
 
-    {
-        const sheetArray: string[][] = [['Overview per Group Type'], []];
-        
-        addToSheetArray(types, sheetArray, overviewTypeMap);
-        
-        sheetArray.push([]);
-        sheetArray.push(['Overview per Group']);
-        sheetArray.push([]);
+    addOverviewSheet(result, [
+        {header: 'Overview per Group Type', keys: types, map: overviewTypeMap},
+        {header: 'Overview per Group', keys: groups, map: overviewGroupMap}
+    ]);
 
-        addToSheetArray(groups, sheetArray, overviewGroupMap);
-        // for (const group of groups) {
-        //     sheetArray.push([group]);
-        //     const subMap = overviewGroupMap.get(group);
-        //     if (!subMap) {
-        //         continue;
-        //     }
-        //     const subList = [...subMap.entries()];
-        //     subList.sort((a, b) => b[1]-a[1]);
-        //     for (const [userId, count] of subList) {
-        //         sheetArray.push([userId, `${count} sessions`]);
-        //     }
-        //     sheetArray.push([]);
-        // }
+    // // Block to limit sheetArray's scope
+    // {
+    //     const sheetArray: string[][] = [['Overview per Group Type'], []];
+        
+    //     addToSheetArray(types, sheetArray, overviewTypeMap);
+        
+    //     sheetArray.push([]);
+    //     sheetArray.push(['Overview per Group']);
+    //     sheetArray.push([]);
 
-        const sheetName = 'Overview';
-        result.SheetNames.push(sheetName);
-        const sheet = XLSX.utils.aoa_to_sheet(sheetArray);
-        const colProps = [{wch: 25}, {wch: 12}];
-        sheet['!cols'] = colProps;        
-        result.Sheets[sheetName] = sheet;
-}
+    //     addToSheetArray(groups, sheetArray, overviewGroupMap);
+    //     addSheet(result, sheetArray, 'Overview', [25, 12]);
+    // }
 
     for (const [idx, group] of groups.entries()) {
         const sheetArray: (string|Date)[][] = [['Start', 'End', 'Location', 'Teacher']];
@@ -146,12 +181,7 @@ export function createGroupSpreadSheet(state: SchedulingState): XLSX.WorkBook {
                 sheetArray.push([start.toLocaleString(),end.toLocaleString(), session.location, session.userId]);
             }
         }
-        const sheetName = `${idx+1}. ${group}`;
-        result.SheetNames.push(sheetName);
-        const sheet = XLSX.utils.aoa_to_sheet(sheetArray);
-        const colProps = [{wch: 28}, {wch: 28}, {wch: 35}, {wch: 28}];
-        sheet['!cols'] = colProps;
-        result.Sheets[sheetName] = sheet;
+        addSheet(result, sheetArray, `${idx+1}. ${group}`, [28, 28, 35, 28]);
     }
 
     return result;

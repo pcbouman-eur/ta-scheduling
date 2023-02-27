@@ -41,7 +41,7 @@ export function weekNumberString(sessions: Session[], addPrefix=true): string {
 }
 
 export function downloadInstanceJson(instance: SchedulingInstance): void {
-    const filename = 'scheduling-'+instance.courseNames[0].replaceAll(/[^A-Za-z0-9-_]/g,'_')+'.json';
+    const filename = 'scheduling-'+instance.courseNames[0].replaceAll(/[^A-Za-z0-9-_]/g,'_')+'.instance.json';
     const element = document.createElement('a');
     const body = JSON.stringify(instance);
     element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(body));
@@ -58,7 +58,7 @@ export function downloadPreferencesJson(preferences: UserPreferences, instance: 
         + '-'
         + instance.courseNames[0].replaceAll(/[^A-Za-z0-9-_]/g,'_')
     filename = filename.replaceAll(/_*$/g,'').replaceAll(/_+/g,'_');
-    filename += '.json';
+    filename += '.preferences.json';
     const element = document.createElement('a');
     const body = JSON.stringify(preferences);
     element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(body));
@@ -71,7 +71,7 @@ export function downloadPreferencesJson(preferences: UserPreferences, instance: 
 
 export function downloadSchedulingJson(state: SchedulingState): void {
     const instance = state.instance;
-    const filename = 'scheduling-state-'+instance.courseNames[0].replaceAll(/[^A-Za-z0-9-_]/g,'_')+'.json';
+    const filename = 'scheduling-state-'+instance.courseNames[0].replaceAll(/[^A-Za-z0-9-_]/g,'_')+'.state.json';
     const element = document.createElement('a');
     const body = JSON.stringify(state);
     element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(body));

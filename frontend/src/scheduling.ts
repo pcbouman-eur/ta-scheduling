@@ -5,6 +5,7 @@ import weekOfYear from 'dayjs/plugin/weekOfYear';
 dayjs.extend(weekOfYear);
 
 function computeBundles(instance: SchedulingInstance): IndexedBundle[] {
+    console.log(instance);
     const result = [];
     let index = 0;
     for (const bundle of instance.bundles) {
@@ -140,7 +141,9 @@ function configToScore(config: SchedulingConfiguration, pref: Preference): numbe
         case Preference.UNAVAILABLE:
             return config.unavailableScore;
     }
-    throw 'The preference was not recognized.'
+    console.log(pref);
+    return config.neutralScore;
+    throw `The preference ${pref} was not recognized.`
 }
 
 function areConsecutive(session1: Session, session2: Session, config: SchedulingConfiguration): boolean {
@@ -346,6 +349,7 @@ export function computeScheduleInformation(instance: SchedulingInstance,
                                            availability: UserAvailability[],
                                            assignment: number[],
                                            config: SchedulingConfiguration): ScheduleInformation {
+    console.log(instance);
     const bundles = computeBundles(instance);
     const bundlesPerTa = computeBundlesPerTA(assignment, availability, bundles);
     const matrix = computeAssignmentMatrix(instance, bundlesPerTa, availability);

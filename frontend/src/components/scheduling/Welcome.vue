@@ -6,7 +6,7 @@
         <p>In this part of the application, you can schedule TA's.</p>
         <v-divider />
         <h5>Import scheduling state from a .json file</h5>
-        <FileDropZone accept=".json" @change="change"/>
+        <FileDropZone accept=".state.json" @change="change"/>
       </v-col>
     </v-row>
   </v-container>

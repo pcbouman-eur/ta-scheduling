@@ -47,6 +47,7 @@ export default new Vuex.Store({
             state.taAvailability = payload;
         },
         addTAPreferences(state, payload) {
+            console.log(state, payload);
             state.taAvailability.push({totalWorkload: 4*8, maxWeeklyWorkload: 4, preferences: payload});
         },
         assignBundleToTa(state, payload) {
@@ -98,17 +99,22 @@ export default new Vuex.Store({
     actions: {
         loadInstance(context, src) {
             console.log(src);
-            return fetch(src.url)
-                .then(response => {
-                    return response.json()
-                })
-                .then(jsonObj => {
-                    console.log(jsonObj);
-                    context.commit('setInstance', jsonObj);
-                })
-                .catch(err => {
-                    console.log(err);
-                })
+            if (src.data) {
+                const instance = JSON.parse(src.data);
+                context.commit('setInstance', instance);
+            }
+            else if (src.url) {
+                return fetch(src.url)
+                    .then(response => {
+                        return response.json()
+                    })
+                    .then(jsonObj => {
+                        context.commit('setInstance', jsonObj);
+                    })
+                    .catch(err => {
+                        console.log(err);
+                    })
+            }
         }
     }
 
